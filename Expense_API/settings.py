@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'Expense_API.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": "Tracking_Expenses",
         "USER": DB_USER,
         "PASSWORD": DB_PASSWORD,

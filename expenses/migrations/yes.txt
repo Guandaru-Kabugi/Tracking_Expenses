@@ -1,0 +1,48 @@
+migrations.AlterField(
+            model_name='item',
+            name='item_category',
+            field=models.CharField(max_length=100, unique=True, verbose_name='Item Category'),
+        ),
+        migrations.DeleteModel(
+            name='Category',
+        ),
+        
+
+        migration 5
+    
+
+        migrations.RemoveField(
+            model_name='item',
+            name='item_category',
+        ),
+
+        migration 6
+
+        migrations.DeleteModel(
+            name='Category',
+        ),
+
+
+
+
+        migrations.RenameField(
+            model_name='item',
+            old_name='item_category',
+            new_name='category',
+        ),
+
+
+        migrations.RenameField(
+            model_name='item',
+            old_name='category',
+            new_name='item_category',
+        ),
+
+
+        migrations.RemoveField(
+            model_name='item',
+            name='item_category',
+        ),
+        migrations.DeleteModel(
+            name='Category',
+        ),
