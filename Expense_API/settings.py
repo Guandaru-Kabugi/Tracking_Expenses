@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'expenses',
     'django_filters',
     'sum',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [

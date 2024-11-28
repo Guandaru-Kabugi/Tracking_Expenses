@@ -16,10 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view as swagger_get_schema
 
+schema_view = swagger_get_schema(
+    openapi.Info(
+        title='Track Expenses API',
+        default_version='1.0.0',
+        description='Helps me track my expenses'
+    ),
+    public=True
+    )
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/',include('accounts.urls')),
     path('api/',include('expenses.urls')),
     path('track_expenses/',include('sum.urls')),
+    path('',schema_view.with_ui('swagger',cache_timeout=0),name='swagger schema'),
 ]
