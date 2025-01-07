@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 from dotenv import load_dotenv
 load_dotenv()
 DB_HOST = os.getenv('DB_HOST')
@@ -95,7 +96,18 @@ DATABASES = {
         "PORT": "5432",
     }
 }
-
+database_url = os.getenv('DB_URL')
+DATABASES['default'] = dj_database_url.parse(database_url)
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "alexguandaru$trackingexpenses",
+#         "USER": "alexguandaru",
+#         "PASSWORD": "Wealthmagnet96.,g",
+#         "HOST": "alexguandaru.mysql.pythonanywhere-services.com",
+#         "PORT": "3306",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
