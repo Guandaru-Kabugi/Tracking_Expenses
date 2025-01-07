@@ -1,0 +1,953 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 6,
+        "codename": "add_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 6,
+        "codename": "change_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 6,
+        "codename": "delete_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 6,
+        "codename": "view_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 7,
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 7,
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 7,
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 7,
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 8,
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 8,
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 8,
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 8,
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 9,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 9,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 9,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 9,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add item",
+        "content_type": 10,
+        "codename": "add_item"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change item",
+        "content_type": 10,
+        "codename": "change_item"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete item",
+        "content_type": 10,
+        "codename": "delete_item"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view item",
+        "content_type": 10,
+        "codename": "view_item"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4l4gdw45gmifey5kho7iv2vwnscgpvxy",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlnGS5xQ0nOG6PsvOIBsKU4qxN1JpBTQvpl5bzXCuuRxbTyPE6mLOqvT75YAn1x2QA8o96qxlmWekt4VfdCmb5X4dT3cv4MMLW81SgreMrkBJaCzHM1gBFhiZzBYiZZwczh5InYcyPVioLMJfG8iovp8ARvUOXw:1tGbqM:WrF2OxB8EVjndQxLq1SuYVm-siCzoCMPy8gcrea3OMM",
+        "expire_date": "2024-12-12T10:33:54.631Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "biyht3iegu40zjjlkh1brxkef6ajf19f",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlnGS5xQ0nOG6PsvOIBsKU4qxN1JpBTQvpl5bzXCuuRxbTyPE6mLOqvT75YAn1x2QA8o96qxlmWekt4VfdCmb5X4dT3cv4MMLW81SgreMrkBJaCzHM1gBFhiZzBYiZZwczh5InYcyPVioLMJfG8iovp8ARvUOXw:1tHDTA:Ynu3M-YwTxxo4EGSvpiR-IA8dgf9JEmx-K6TPCVZkVY",
+        "expire_date": "2024-12-14T02:44:28.571Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eo2egt3wxs8bbfh26955jxbh4b3sziqg",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAYGECX7nsGMnSoVA0kpV0Z765NutDtf-_9l4i0rSVuPS9xZnERIE6_W6LxkesO-E711uTY6rrMSe6KPGiXQ-P8vB7u30GhXr61I7TszwY9KmuNY6CEkCB5bThM1gQGVh6yAiTUitHzlIhBO406ZPH-ALrQNv0:1tGEzF:ZihhXBvh9gG_MQLJy8nHefXUA9GUYYgX6X0LUmvae5w",
+        "expire_date": "2024-12-11T10:09:33.563Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rkyrpmgzp8atcaw0yap0vlk049ytppbc",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlnGS5xQ0nOG6PsvOIBsKU4qxN1JpBTQvpl5bzXCuuRxbTyPE6mLOqvT75YAn1x2QA8o96qxlmWekt4VfdCmb5X4dT3cv4MMLW81SgreMrkBJaCzHM1gBFhiZzBYiZZwczh5InYcyPVioLMJfG8iovp8ARvUOXw:1tTkQ4:WDXr7RriIKdjJ3lt84qzMKEJaJGWFLipFfOOJymq7z8",
+        "expire_date": "2025-01-17T16:21:04.355Z"
+    }
+},
+{
+    "model": "accounts.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$OlVmtDrf0hD1LzsEgUNIUx$TWm9rxDjcDV8xctz5tNI0Sp1V4E1oGlRJjS0S3oVylg=",
+        "last_login": "2025-01-03T16:21:04.346Z",
+        "is_superuser": true,
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-11-27T07:09:06.322Z",
+        "username": "kabugi",
+        "email": "kabugi96@gmail.com",
+        "first_name": "Alex",
+        "last_name": "Guandaru",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$1LDimozT1vGCdhCr0EZPdC$nzN6cRHO2M5s7gA0hhVnpld+9QI5UPs4HGJhYGg30es=",
+        "last_login": "2024-11-27T10:09:33.561Z",
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-11-27T07:14:03.349Z",
+        "username": "test_user",
+        "email": "test_user@gmail.com",
+        "first_name": "test1",
+        "last_name": "test2",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$P8W9u5Qpm9XExK9NNaF2yp$pgfwyo05UrYvxSWEwrDEvhv72Fa5Gnj04O9uxlqKQ20=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-11-28T10:34:12.496Z",
+        "username": "test_user1",
+        "email": "test_user1@gmail.com",
+        "first_name": "test1",
+        "last_name": "test2",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 1,
+    "fields": {
+        "name": "Groceries",
+        "user": 2
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 2,
+    "fields": {
+        "name": "Grocery",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 3,
+    "fields": {
+        "name": "Snacks",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 4,
+    "fields": {
+        "name": "Wheat",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 5,
+    "fields": {
+        "name": "Grains",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 6,
+    "fields": {
+        "name": "Proteins",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 7,
+    "fields": {
+        "name": "Fruits",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 8,
+    "fields": {
+        "name": "Sweets",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 9,
+    "fields": {
+        "name": "Carbohydrates",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 10,
+    "fields": {
+        "name": "Clothes",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 11,
+    "fields": {
+        "name": "Repairs",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 12,
+    "fields": {
+        "name": "Electronics",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 13,
+    "fields": {
+        "name": "Beverage",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 14,
+    "fields": {
+        "name": "Bulk shopping",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.category",
+    "pk": 15,
+    "fields": {
+        "name": "Nuts",
+        "user": 1
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "item_name": "Avocado",
+        "item_category": 2,
+        "date_recorded": "2024-11-27",
+        "cost": "40.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "item_name": "Spinach",
+        "item_category": 2,
+        "date_recorded": "2024-11-27",
+        "cost": "10.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 3,
+    "fields": {
+        "user": 2,
+        "item_name": "Avocado",
+        "item_category": 1,
+        "date_recorded": "2024-11-27",
+        "cost": "30.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 7,
+    "fields": {
+        "user": 2,
+        "item_name": "Avocado",
+        "item_category": 1,
+        "date_recorded": "2024-11-27",
+        "cost": "15.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "item_name": "peanuts",
+        "item_category": 3,
+        "date_recorded": "2024-11-28",
+        "cost": "40.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "item_name": "fresh",
+        "item_category": 3,
+        "date_recorded": "2024-11-28",
+        "cost": "10.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "item_name": "Macadamia",
+        "item_category": 15,
+        "date_recorded": "2024-11-30",
+        "cost": "100.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 11,
+    "fields": {
+        "user": 1,
+        "item_name": "Chips mix",
+        "item_category": 3,
+        "date_recorded": "2024-11-30",
+        "cost": "150.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 12,
+    "fields": {
+        "user": 1,
+        "item_name": "Household Items",
+        "item_category": 14,
+        "date_recorded": "2024-11-30",
+        "cost": "185.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 13,
+    "fields": {
+        "user": 1,
+        "item_name": "Eggs",
+        "item_category": 6,
+        "date_recorded": "2024-12-01",
+        "cost": "150.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 14,
+    "fields": {
+        "user": 1,
+        "item_name": "peanuts",
+        "item_category": 15,
+        "date_recorded": "2024-12-02",
+        "cost": "70.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 15,
+    "fields": {
+        "user": 1,
+        "item_name": "Eggs",
+        "item_category": 2,
+        "date_recorded": "2024-12-02",
+        "cost": "165.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 16,
+    "fields": {
+        "user": 1,
+        "item_name": "mandazi",
+        "item_category": 3,
+        "date_recorded": "2024-12-02",
+        "cost": "50.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 17,
+    "fields": {
+        "user": 1,
+        "item_name": "cakes",
+        "item_category": 3,
+        "date_recorded": "2024-12-02",
+        "cost": "20.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 18,
+    "fields": {
+        "user": 1,
+        "item_name": "air freshner",
+        "item_category": 14,
+        "date_recorded": "2024-12-04",
+        "cost": "185.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 19,
+    "fields": {
+        "user": 1,
+        "item_name": "samosa",
+        "item_category": 3,
+        "date_recorded": "2024-12-04",
+        "cost": "30.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 20,
+    "fields": {
+        "user": 1,
+        "item_name": "pork",
+        "item_category": 6,
+        "date_recorded": "2024-12-04",
+        "cost": "150.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 21,
+    "fields": {
+        "user": 1,
+        "item_name": "peanuts",
+        "item_category": 15,
+        "date_recorded": "2024-12-04",
+        "cost": "115.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 22,
+    "fields": {
+        "user": 1,
+        "item_name": "pork",
+        "item_category": 6,
+        "date_recorded": "2024-12-07",
+        "cost": "140.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 23,
+    "fields": {
+        "user": 1,
+        "item_name": "sweet potatoes",
+        "item_category": 9,
+        "date_recorded": "2024-12-07",
+        "cost": "50.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 24,
+    "fields": {
+        "user": 1,
+        "item_name": "corn",
+        "item_category": 9,
+        "date_recorded": "2024-12-07",
+        "cost": "20.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 25,
+    "fields": {
+        "user": 1,
+        "item_name": "Peanuts",
+        "item_category": 15,
+        "date_recorded": "2024-12-07",
+        "cost": "40.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 26,
+    "fields": {
+        "user": 1,
+        "item_name": "Eggs",
+        "item_category": 6,
+        "date_recorded": "2024-12-07",
+        "cost": "90.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 27,
+    "fields": {
+        "user": 1,
+        "item_name": "Yogurt",
+        "item_category": 13,
+        "date_recorded": "2024-12-07",
+        "cost": "70.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 28,
+    "fields": {
+        "user": 1,
+        "item_name": "Chips",
+        "item_category": 3,
+        "date_recorded": "2024-12-07",
+        "cost": "150.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 29,
+    "fields": {
+        "user": 1,
+        "item_name": "Eegs",
+        "item_category": 6,
+        "date_recorded": "2024-12-08",
+        "cost": "90.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 30,
+    "fields": {
+        "user": 1,
+        "item_name": "Beans",
+        "item_category": 9,
+        "date_recorded": "2024-12-08",
+        "cost": "30.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 31,
+    "fields": {
+        "user": 1,
+        "item_name": "Chapati",
+        "item_category": 9,
+        "date_recorded": "2024-12-08",
+        "cost": "40.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 32,
+    "fields": {
+        "user": 1,
+        "item_name": "Avocado",
+        "item_category": 7,
+        "date_recorded": "2024-12-08",
+        "cost": "20.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 33,
+    "fields": {
+        "user": 1,
+        "item_name": "pork",
+        "item_category": 2,
+        "date_recorded": "2024-12-12",
+        "cost": "500.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 34,
+    "fields": {
+        "user": 1,
+        "item_name": "snacks",
+        "item_category": 3,
+        "date_recorded": "2024-12-12",
+        "cost": "500.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 35,
+    "fields": {
+        "user": 1,
+        "item_name": "Beef meat",
+        "item_category": 6,
+        "date_recorded": "2025-01-03",
+        "cost": "150.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 36,
+    "fields": {
+        "user": 1,
+        "item_name": "Avocado",
+        "item_category": 7,
+        "date_recorded": "2025-01-03",
+        "cost": "25.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 37,
+    "fields": {
+        "user": 1,
+        "item_name": "Onion",
+        "item_category": 2,
+        "date_recorded": "2025-01-03",
+        "cost": "5.00"
+    }
+},
+{
+    "model": "expenses.item",
+    "pk": 38,
+    "fields": {
+        "user": 1,
+        "item_name": "Bananas",
+        "item_category": 7,
+        "date_recorded": "2025-01-03",
+        "cost": "20.00"
+    }
+}
+]
