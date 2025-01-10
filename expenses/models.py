@@ -1,5 +1,8 @@
 from django.db import models
+from django.db.models.signals import post_delete
 from taggit.managers import TaggableManager
+from django.dispatch import receiver
+from taggit.models import Tag
 from django.contrib.auth import get_user_model
 User = get_user_model()
 # Create your models here.
@@ -26,3 +29,9 @@ class Item(models.Model):
     
 
     tags = TaggableManager()
+
+@receiver(post_delete, sender=Item)
+def delete_unused_tags(sender, instance, **kwargs):
+    for tag in instance.tags.all():
+        if not tag.taggit_taggeditem_items.exists():
+            tag.delete()
