@@ -41,11 +41,15 @@ class ItemSerializer(TaggitSerializer, serializers.ModelSerializer):
             self.fields['item_category'].queryset = Category.objects.filter(user=user)
             
     def to_internal_value(self, data):
+        # Create a mutable copy of the data
+        mutable_data = data.copy()
+
         # Split the tags field if it's provided as a single string
-        tags = data.get('tags')
+        tags = mutable_data.get('tags')
         if isinstance(tags, str):
-            data['tags'] = [tag.strip() for tag in tags.split(',')]
-        return super().to_internal_value(data)
+            mutable_data['tags'] = [tag.strip() for tag in tags.split(',')]
+
+        return super().to_internal_value(mutable_data)
 # class ItemSerializer(serializers.ModelSerializer):
 #     item_category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.none(),required=True)
 #     item_category_name = serializers.CharField(source='item_category.name',read_only=True)
