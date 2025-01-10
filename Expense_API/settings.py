@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'expenses',
     'django_filters',
     'sum',
-    'drf_yasg'
+    'drf_yasg',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -164,5 +165,9 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-    )
+    ),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
 }
+
+TAGGIT_CASE_INSENSITIVE = True

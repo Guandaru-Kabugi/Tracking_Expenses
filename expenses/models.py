@@ -1,4 +1,5 @@
 from django.db import models
+from taggit.managers import TaggableManager
 from django.contrib.auth import get_user_model
 User = get_user_model()
 # Create your models here.
@@ -7,6 +8,7 @@ User = get_user_model()
 class Category(models.Model):
     name = models.CharField(max_length=100,unique=False,null=False, blank=False, verbose_name='Item Category')
     user = models.ForeignKey(User,on_delete=models.CASCADE,verbose_name='user',null=True)
+    tags = TaggableManager()
 
     def __str__(self):
         return self.name
@@ -21,3 +23,6 @@ class Item(models.Model):
 
     def __str__(self):
         return f'{self.user.first_name} bought {self.item_name}'
+    
+
+    tags = TaggableManager()

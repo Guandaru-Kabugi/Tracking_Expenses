@@ -1,30 +1,35 @@
 from rest_framework import serializers
 from .models import Category, Item
-class CategorySerializer(serializers.ModelSerializer):
+from taggit.serializers import (TagListSerializerField,
+                                TaggitSerializer)
+class CategorySerializer(TaggitSerializer, serializers.ModelSerializer):
+    tags = TagListSerializerField()
     class Meta:
         model = Category
-        fields = ['id','name']
+        fields = ['id','name','tags']
     def validate_name(self, value):
         if len(value) < 4:
             raise serializers.ValidationError("Name of the Category cannot be Less than 4 characters")
         return value
-class ExpenseSerializer(serializers.ModelSerializer):
+class ExpenseSerializer(TaggitSerializer, serializers.ModelSerializer):
     # category = serializers.CharField(source='item_category.name', read_only=True)
+    tags = TagListSerializerField()
     class Meta:
         model = Item
-        fields = ['id','item_name','item_category','date_recorded','cost']
+        fields = ['id','item_name','item_category','date_recorded','cost','tags']
     def validate_item_name(self, value):
         if len(value) <4:
             raise serializers.ValidationError('Name of Item cannot be less than 4 characters')
         return value
     
-class ItemSerializer(serializers.ModelSerializer):
+class ItemSerializer(TaggitSerializer, serializers.ModelSerializer):
+    tags = TagListSerializerField()
     # Define the item_category field
     item_category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.none(), required=True)
 
     class Meta:
         model = Item
-        fields = ['id', 'item_name', 'item_category', 'cost']
+        fields = ['id', 'item_name', 'item_category', 'cost','tags']
 
     def __init__(self, *args, **kwargs):
         # Get the user from the context (which is passed in the view)
