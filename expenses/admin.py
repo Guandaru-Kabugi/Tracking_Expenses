@@ -5,7 +5,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 @admin.register(Item)
 class ExpenseAdmin(admin.ModelAdmin):
-    list_display = ['id','name','item_name','item_category','date_recorded','cost','tag_list']
+    list_display = ['id','user','item_name','item_category','date_recorded','cost','tag_list']
 
     def get_queryset(self, request):
         return super().get_queryset(request).prefetch_related('tags')
