@@ -44,12 +44,15 @@ class ItemSerializer(TaggitSerializer, serializers.ModelSerializer):
         # Create a mutable copy of the data
         mutable_data = data.copy()
 
-        # Split the tags field if it's provided as a single string
+        # Convert the tags field into a list if it's a string
         tags = mutable_data.get('tags')
         if isinstance(tags, str):
-            mutable_data['tags'] = [tag.strip() for tag in tags.split(',')]
+            # Split the string by commas and strip extra spaces
+            mutable_data['tags'] = [tag.strip() for tag in tags.split(',') if tag.strip()]
 
+        # Pass the modified data to the parent method
         return super().to_internal_value(mutable_data)
+
 # class ItemSerializer(serializers.ModelSerializer):
 #     item_category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.none(),required=True)
 #     item_category_name = serializers.CharField(source='item_category.name',read_only=True)
